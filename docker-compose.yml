@@ -9,6 +9,7 @@ services:
       dockerfile: dockerfile
     volumes:
       - dns_config:/etc/bind
+    privileged: true
     expose:
       - 8888
   nginx:
